@@ -1,0 +1,19 @@
+{
+  "name": "tradle-kb-lowdb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tradle/kv-lowdb",
+  "author": "Mark Vayngrib <mark@tradle.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.15.0"
+  },
+  "dependencies": {
+    "@tradle/kv": "tradle/kv",
+    "lowdb": "^0.15.4"
+  },
+  "scripts": {
+    "test": "node test",
+    "lint": "eslint --quiet --ignore-path .gitignore ."
+  }
+}
