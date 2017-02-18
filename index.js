@@ -1,5 +1,6 @@
 
 const low = require('lowdb')
+const wrap = require('@tradle/kv').wrap
 
 module.exports = function persistWithLowDB ({ path }) {
   const db = low(path)
@@ -54,7 +55,7 @@ module.exports = function persistWithLowDB ({ path }) {
 
   function close () {}
 
-  return {
+  const store = {
     get,
     put,
     del,
@@ -63,4 +64,6 @@ module.exports = function persistWithLowDB ({ path }) {
     clear,
     close
   }
+
+  return wrap({ store })
 }

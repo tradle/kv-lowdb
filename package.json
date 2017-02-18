@@ -1,5 +1,5 @@
 {
-  "name": "tradle-kb-lowdb",
+  "name": "@tradle/kv-lowdb",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tradle/kv-lowdb",
